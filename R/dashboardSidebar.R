@@ -74,7 +74,7 @@ argonDashSidebar <- function(..., dropdownMenus = NULL, id, brand_url = NULL, br
         class = "navbar-brand pt-0 my-0",
         href = brand_url,
         target = "_blank",
-        shiny::img(class = "navbar-brand-img", src = brand_logo)
+        shiny::img(class = "navbar-brand-img", src = brand_logo, style = "vertical-align:middle;padding-top:5px")
       ),
       # Dropdown Menus
       shiny::tags$ul(class = "nav align-items-center d-md-none", dropdownMenus),
@@ -91,7 +91,7 @@ argonDashSidebar <- function(..., dropdownMenus = NULL, id, brand_url = NULL, br
               shiny::a(
                 href = brand_url,
                 target = "_blank",
-                shiny::img(class = "navbar-brand-img", src = brand_logo) 
+                shiny::img(class = "navbar-brand-img", src = brand_logo, style = "vertical-align:middle;padding-top:5px") 
               )
             ),
             shiny::tags$div(
